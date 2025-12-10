@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Your Destination</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: radial-gradient(circle at top, #111827 0, #020617 45%, #000 100%);
+      color: #fff;
+    }
+
+    .gate-box {
+      background: rgba(2, 6, 23, 0.8);
+      padding: 2.5rem 3rem;
+      border-radius: 1.25rem;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      width: 92%;
+      max-width: 480px;
+    }
+
+    .gate-box h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .gate-box p {
+      color: #9ca3af;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    .gate-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .gate-btn {
+      display: block;
+      padding: 0.8rem;
+      border-radius: 999px;
+      background: #22c55e;
+      color: #022c22;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: background 0.18s ease-out, transform 0.18s ease-out;
+    }
+
+    .gate-btn:hover {
+      background: #16a34a;
+      transform: translateY(-2px);
+    }
+
+    .business {
+      background: #3b82f6;
+      color: #0f172a;
+    }
+
+    .business:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gate-box">
+    <h1>Where would you like to go?</h1>
+    <p>Select whether you're here for personal content or business-related materials.</p>
+
+    <div class="gate-btns">
+      <a class="gate-btn personal" href="personal.html">Personal</a>
+      <a class="gate-btn business" href="business.html">Business</a>
+    </div>
+  </div>
+
+</body>
+</html>

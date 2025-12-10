@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinematic Hobbies</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Cinematic Touches */
+    .cinematic-hero {
+      padding: 6rem 0 4rem;
+      text-align: center;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent),
+                  url("media/hobbiesbg.jpg")
+                  center/cover no-repeat;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .cinematic-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.8);
+    }
+
+    .cinematic-hero p {
+      max-width: 40rem;
+      margin: 0 auto;
+      color: #cbd5e1;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Cinematic Card Grid */
+    .cinematic-grid {
+      display: grid;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 850px) {
+      .cinematic-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .cin-card {
+      display: flex;
+      gap: 1.5rem;
+      background: linear-gradient(135deg, #0f172a, #020617 70%);
+      padding: 1.5rem;
+      border-radius: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      transition: transform 0.25s ease-out, box-shadow 0.25s ease-out;
+    }
+
+    .cin-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.75);
+      border-color: rgba(34,197,94,0.35);
+    }
+
+    .cin-card img {
+      width: 140px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .cin-info h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      letter-spacing: 0.03em;
+    }
+
+    .cin-info p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Featured Hobby Section */
+    .cinematic-feature {
+      margin-top: 4rem;
+      padding: 3rem;
+      border-radius: 1.25rem;
+      background: radial-gradient(circle at top left, rgba(34,197,94,0.15), rgba(2,6,23,0.8));
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.65);
+    }
+
+    .cinematic-feature h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .cinematic-feature p {
+      color: var(--text-muted);
+      max-width: 42rem;
+    }
+
+    /* Cinematic Media Row */
+    .cinematic-media {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .cinematic-media img {
+      width: 230px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      border: 1px solid rgba(255,255,255,0.08);
+      filter: brightness(0.85);
+      transition: filter 0.2s ease-out;
+    }
+
+    .cinematic-media img:hover {
+      filter: brightness(1);
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <h1 class="logo">Hobbies</h1>
+    <nav class="nav">
+      <a href="personal.html">Personal Home</a>
+      <a href="index.html">Back to Gate</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CINEMATIC HERO SECTION -->
+<div class="cinematic-hero">
+  <h1>Hobbies</h1>
+  <p>A dramatic look into the things that shape me — creativity, sound, motion, and expression.</p>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- GRID OF HOBBIES -->
+    <div class="cinematic-grid">
+
+      <!-- Hobby Card 1 -->
+     <div class="cin-card">
+  <a href="hobbies/dvdcollection.html">
+    <img src="media/dvd.webp" alt="">
+  </a>
+  <div class="cin-info">
+    <h3><a href="hobbies/dvdcollection.html">Bluray collection</a></h3>Here you will find all the movies in my collection at this time.</p>
+  </div>
+</div>
+
+  
+      <!-- Hobby Card 3 -->
+      <div class="cin-card">
+        <img src="media/vinyl.jpg" alt="">
+        <div class="cin-info">
+          <h3>Vinyl & Records</h3>
+          <p>A mix of collecting art, sound, and texture — music the way it feels alive.</p>
+        </div>
+      </div>
+
+      <!-- Hobby Card 4 -->
+      <div class="cin-card">
+         <a href="hobbies/printing.html"></a>
+        <img src="media/Print.jpg" alt="">
+        <div class="cin-info">
+    <h3><a href="hobbies/printing.html">3D printing</a></h3>Here you will find all the movies in my collection at this time.</p>
+          <p>I build personal spaces like this one, experimenting with layout and mood.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FEATURED HOBBY BLOCK -->
+   
+
+      <div class="cinematic-media">
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
